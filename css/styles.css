@@ -44,11 +44,10 @@ ul {
 	padding: 0;
 	margin: 0;
 }
-img{
+img {
 	display: block;
 }
 .container {
-	
 	width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -104,7 +103,7 @@ img{
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	text-decoration: none;
-	transition: color var(--anmation) ;
+	transition: color var(--anmation);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -116,7 +115,7 @@ img{
 /* телефон эмейл */
 .icon-soh {
 	display: block;
-	fill: currentcolor; 
+	fill: currentcolor;
 	height: 16px;
 	width: 16px;
 	justify-content: center;
@@ -132,7 +131,6 @@ img{
 }
 .auth-nav {
 	margin-left: auto;
-	df
 }
 .auth-nav .link {
 	display: block;
@@ -144,13 +142,28 @@ img{
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	text-decoration: none;
-	transition: color var(--anmation) ;
+	transition: color var(--anmation);
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus,
 .auth-nav .link .footer-text:hover,
 .auth-nav .link .footer-text:focus {
 	color: var(--accent-color);
+}
+/* подчеркивание текушей страницы */
+
+.current::after {
+	content: ' ';
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	border-radius: 4px;
+	background-color: var(--accent-color);
+}
+.current {
+	position: relative;
 }
 /* Заголовки */
 .section-title {
@@ -198,7 +211,6 @@ img{
 		),
 		url(../images/backgroundImg.jpg);
 
-	
 	max-width: 1600px;
 }
 /* benefits преймушества  */
@@ -263,7 +275,7 @@ img{
 	margin-left: 10px;
 }
 
-.soc-item{
+.soc-item {
 	display: flex;
 	border-radius: 50%;
 	transition: background-color var(--anmation);
@@ -272,11 +284,11 @@ img{
 .soc-link {
 	display: flex;
 	color: var(--primary-text-color);
-		width: 44px;
+	width: 44px;
 	height: 44px;
 	justify-content: center;
 	align-items: center;
-	transition: color var(--anmation), ;
+	transition: color var(--anmation);
 }
 
 .soc-list .soc-icon {
@@ -287,52 +299,43 @@ img{
 	fill: currentColor;
 }
 .soc-link:hover,
-.soc-link:focus{
+.soc-link:focus {
 	color: var(--primary-white-color);
-
 }
 .soc-item:hover,
-.soc-item:focus{
-		background-color:var(--accent-color);
-			
-
+.soc-item:focus {
+	background-color: var(--accent-color);
 }
 /* work */
-.work-text{
+.work-text {
 	background: rgba(47, 48, 58, 0.8);
 	color: var(--primary-white-color);
 
-position: absolute;
-width: 370px;
-padding-top: 27px;
-padding-bottom: 27px;
-bottom: 0;	
-display: flex;
-justify-content: center;
-text-align: center;
+	position: absolute;
+	width: 370px;
+	padding-top: 27px;
+	padding-bottom: 27px;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	text-align: center;
 
-
-
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
 }
 
-.product-thumb{
+.product-thumb {
 	position: relative;
 }
 .section.work {
-	
 	padding-top: 0;
 }
 .item-work {
-	
-	
 	margin-right: 30px;
 }
 .list.flex .item-work:last-child {
-	
 	margin-right: 0;
 }
 /* клиенты */
@@ -390,9 +393,8 @@ text-transform: uppercase;
 
 .clients-item .icon {
 	display: block;
-	
+
 	fill: #afb1b8;
-	
 }
 
 /* КНОПКИ button */
@@ -406,7 +408,7 @@ text-transform: uppercase;
 	line-height: 1.88;
 	min-width: 200px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	transition:  var(--anmation);
+	transition: var(--anmation);
 }
 .hero .button:hover,
 .hero .button:focus {
@@ -426,13 +428,14 @@ text-transform: uppercase;
 	text-decoration: none;
 	cursor: pointer;
 	border-radius: 4px;
-	transition: background-color var(--anmation), color var(--anmation); 
+	transition: background-color var(--anmation), color var(--anmation);
 }
 .button:hover,
 .button:focus {
 	background-color: var(--accent-color);
 	color: var(--primary-white-color);
-	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+		0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button.current {
 	background-color: var(--accent-color);
@@ -505,10 +508,10 @@ text-transform: uppercase;
 .link-portfolio {
 	text-decoration: none;
 	display: block;
-	
 }
-.link-portfolio:hover{
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.link-portfolio:hover {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+		1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .list.portfolio-flex {
 	display: flex;
@@ -541,67 +544,64 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 }
 /* оверлей */
 
-.card-text{
-position: absolute;
+.card-text {
+	position: absolute;
 
 	padding: 63px 24px;
 	background-color: rgba(33, 150, 243, 0.9);
-color: var(--primary-white-color);	
-font-size: 18px; 
-line-height: 1.56;
-transform: translateY(410px);
-transition: transform var(--anmation);
-
+	color: var(--primary-white-color);
+	font-size: 18px;
+	line-height: 1.56;
+	transform: translateY(410px);
+	transition: transform var(--anmation);
 }
 .link-portfolio:hover .card-text,
-.link-portfolio:focus .card-text{
+.link-portfolio:focus .card-text {
 	transform: translateY(0);
 }
 
-.card-thumb{
+.card-thumb {
 	position: relative;
 	display: flex;
-overflow: hidden;
+	overflow: hidden;
 }
 
 /* подпишись, follow */
-.follow .soc-link{
+.follow .soc-link {
 	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 50%;
-	transition: background-color var(--accent-color);;
+	transition: background-color var(--accent-color);
 }
 .follow .soc-link:hover,
-.follow .soc-link:focus
-{
+.follow .soc-link:focus {
 	background-color: var(--accent-color);
 }
-.follow .soc-icon{
+.follow .soc-icon {
 	fill: var(--primary-white-color);
 }
-.follow-title{
+.follow-title {
 	margin-top: 10px;
-margin-bottom: 20px;
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
 
-text-transform: uppercase;
+	text-transform: uppercase;
 
-color: var(--primary-white-color);
+	color: var(--primary-white-color);
 }
 
-.flex-content{
+.flex-content {
 	display: inline-flex;
-    
 }
-.footer .logo{
+.footer .logo {
 	margin: 0;
 }
-.auth-nav.address{
+.auth-nav.address {
 	margin-right: 70px;
 }
 /* модальное окно */
-.backdrop{
+.backdrop {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -613,46 +613,224 @@ color: var(--primary-white-color);
 	transition: opacity var(--anmation);
 }
 .backdrop.is-hidden {
-opacity: 0;
-pointer-events: none;
+	opacity: 0;
+	pointer-events: none;
 }
-.backdrop.is-hidden .modal{
-	transform: scale(0.9) translate(-50%,-50%);
+.backdrop.is-hidden .modal {
+	transform: scale(0.9) translate(-50%, -50%);
 }
-.modal{
-position: absolute;
-top: 50%;
-left: 50%;
-transform: scale(1) translate(-50%,-50%);
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: scale(1) translate(-50%, -50%);
 
-transition: transform var(--anmation);
+	transition: transform var(--anmation);
 	min-width: 528px;
 	min-height: 581px;
-	
-	background-color: #fff;
 
+	background-color: var(--primary-white-color);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
 }
-.modal .icon{
+.modal .icon {
 	position: absolute;
-		top: 8px;
-		right: 8px;
-		width: 30px;
-		height: 30px;
+	top: 8px;
+	right: 8px;
+	width: 30px;
+	height: 30px;
 
-		cursor: pointer;
+	cursor: pointer;
+	fill: currentColor;
+	color: #000000;
 }
-/* подчеркивание текушей страницы */
+.modal .icon:hover,
+.modal .icon:hover {
+	fill: var(--accent-color);
+}
+/*  adawghdkawgdawgdjawhd;wahduawh;dio */
+.conteiner-modal {
+	margin: 40px;
+}
+.input-modal {
+	padding-left: 42px;
+	width: 448px;
+	height: 40px;
+	margin-bottom: 10px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	outline: none;
 
-.current::after {
-    content: " ";
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    border-radius: 4px;
-    background-color: var(--accent-color);
+	transition: border var(--anmation);
 }
-.current{
+.input-modal:focus,
+.input-modal:hover {
+	border: 1px solid var(--accent-color);
+}
+.text-modal {
+	margin: 40px;
+	margin-bottom: var(--card-set-gap);
+
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.1;
+	text-align: center;
+
+	color: var(--title-text-color);
+}
+.text-label {
+	margin-bottom: 4px;
+
+	font-size: 12px;
+	line-height: 1.1;
+	letter-spacing: 0.01em;
+}
+
+.comment {
+	resize: none;
+	width: 448px;
+	height: 120px;
+	padding: 12px 16px;
+	overflow: auto;
+	outline: none;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+}
+.comment:hover,
+.comment:focus {
+	border: 1px solid var(--accent-color);
+}
+.label {
 	position: relative;
+}
+.check {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	font-size: 14px;
+	line-height: 1.7;
+}
+.checkbox-link {
+	color: var(--blue-color);
+}
+.icon-check {
+	display: inline-block;
+	margin-right: 8px;
+	width: 16px;
+	height: 15px;
+	border: 2px solid var(--title-text-color);
+	border-radius: 2px;
+}
+.icon-box:checked + .icon-check {
+	background-color: var(--accent-color);
+	background-image: url(../images/c.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+
+	border: transparent;
+}
+.btn-modal {
+	display: block;
+
+	margin-top: 30px;
+	width: 200px;
+	height: 50px;
+
+	color: var(--white-color);
+	background-color: var(--blue-color);
+}
+.button.form {
+	display: block;
+	width: 200px;
+	height: 50px;
+
+	margin-top: var(--card-set-gap);
+	margin-right: auto;
+	margin-left: auto;
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.8;
+	letter-spacing: 0.06em;
+	border-radius: 4px;
+
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border: var(--accent-color);
+
+	color: var(--primary-white-color);
+	background-color: var(--accent-color);
+}
+.button.form:hover {
+	background-color: #188ce8;
+}
+
+.icons-label {
+	position: absolute;
+	top: 50%;
+	left: 12px;
+	transform: translateY(-50%);
+
+	transition: fill var(--anmation);
+}
+.input-modal:hover + .icons-label,
+.input-modal:focus + .icons-label {
+	fill: var(--accent-color);
+}
+.icons-label:hover {
+	fill: var(--accent-color);
+}
+
+.visually-hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+}
+/* подпишись на рассылку */
+.distribution {
+	margin-left: 93px;
+}
+.footer-email {
+	height: 50px;
+	width: 358px;
+	padding-left: 16px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	background: var(--bgc-color-section);
+	outline: none;
+	color: var(--primary-white-color);
+}
+.footer .button {
+	text-align: left;
+	padding: 0;
+	min-width: 200px;
+	min-height: 50px;
+	margin-left: 12px;
+	padding-left: 29px;
+	position: relative;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	border: none;
+	color: var(--primary-white-color);
+	background-color: var(--accent-color);
+}
+
+.footer .button::after {
+	content: ' ';
+	width: 24px;
+	height: 24px;
+	top: 13px;
+	position: absolute;
+	margin-left: 10px;
+	background-image: url(../images/telegram.svg);
 }
